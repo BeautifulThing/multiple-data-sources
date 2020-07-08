@@ -1,0 +1,28 @@
+server:
+  port: 8099
+logging:
+  config: classpath:logback.xml
+mybatis-plus:
+  executor-type: simple
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: com.lin.model.*
+spring:
+  datasource:
+    hikari:
+      minimum-idle: 4
+      maximum-pool-size: 16
+      connection-timeout: 10000
+      idle-timeout: 30000
+    dynamic:
+      primary: db_two
+      datasource:
+        db_one:
+          driver-class-name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://127.0.0.1:3306/db_one?characterEncoding=utf8&useSSL=false
+          username: root
+          password: 123456
+        db_two:
+          driver-class-name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://127.0.0.1:3306/db_two?characterEncoding=utf8&useSSL=false
+          username: root
+          password: 123456

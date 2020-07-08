@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lin.mapper.AppleMapper">
+    <select id="selectList" resultType="com.lin.model.Apple">
+        SELECT ap.id, ap.name, ap.prices, ap.type FROM apple ap
+    </select>
+</mapper>
