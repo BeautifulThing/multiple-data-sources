@@ -18,7 +18,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<mysql.version>5.1.39</mysql.version>
+		<mysql.version>8.0.16</mysql.version>
 		<mybaits.version>1.3.2</mybaits.version>
 		<mybatisplus.version>3.0.1</mybatisplus.version>
 		<dynamic.datasource.version>2.4.2</dynamic.datasource.version>
